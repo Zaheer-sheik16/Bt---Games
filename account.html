@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="account.css">
+  <title>Login and Registration Forms</title>
+  
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+            </ul>
+          </nav>
+          
+    </div>
+  <!-- Login-->
+  <form class="login-form">
+    <h2>Login</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Login">
+    <p>Don't have an account? <a id="register-link">Sign up</a></p>
+  </form>
+
+  <!-- Registration-->
+  <form class="registration-form" style="display: none;">
+    <h2>Register</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password"><br><br>
+    <input type="submit" value="Register">
+    <p>Already have an account? <a id="login-link">Login</a></p>
+  </form>
+
+  <script>
+
+    const loginForm = document.querySelector('.login-form');
+    const registrationForm = document.querySelector('.registration-form');
+
+ 
+    document.getElementById('register-link').addEventListener('click', function() {
+      loginForm.style.display = 'none';
+      registrationForm.style.display = 'block';
+    });
+
+    document.getElementById('login-link').addEventListener('click', function() {
+      loginForm.style.display = 'block';
+      registrationForm.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.signup-form {
+    display: none ;
+  }
+  
+  .login-form {
+    display: block ;
+  }
+    body {
+        background: radial-gradient(chartreuse,ghostwhite);
+      }
+    form {
+        width: 50%;
+        margin: 130px auto; 
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+    input[type="text"], input[type="password"], input[type="email"] {
+        width: 60%;
+        height: 20px; 
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    input[type="submit"] {
+        background-color: #058d42; 
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    input[type="submit"]:hover {
+    background-color: #058d42; 
+    opacity: 0.8;
+      }
+
+  .nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    color: #ccc;
+  }
+  
